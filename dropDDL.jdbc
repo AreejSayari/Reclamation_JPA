@@ -1,0 +1,6 @@
+ALTER TABLE reclamations DROP FOREIGN KEY FK_reclamations_ETUDIANT_ID
+ALTER TABLE reclamations DROP FOREIGN KEY FK_reclamations_TYPEREC_ID
+DROP TABLE reclamations
+DROP TABLE typeDeReclamations
+DROP TABLE Utilisateurs
+DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'

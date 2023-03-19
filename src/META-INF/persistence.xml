@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="application">
+	     <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+	     
+	    <class>com.enit.examen.Utilisateur</class>
+	     <class>com.enit.examen.Etudiant</class>
+	     <class>com.enit.examen.Administrateur</class>
+	     <class>com.enit.examen.Reclamation</class>
+	     <class>com.enit.examen.TypeReclamation</class>
+	     
+	     
+			
+		<properties>
+     <property name="toplink.logging.level" value="WARNING"/> 
+               
+       
+         <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
+         <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3307/appreclamation"/> 
+         <property name="toplink.jdbc.user" value="root"/> 
+         <property name="toplink.jdbc.password" value="12345678"/>
+         <property name="toplink.ddl-generation" value="create-tables"/>
+    </properties>		
+		
+		
+		
+	</persistence-unit>
+</persistence>
